@@ -1,0 +1,138 @@
+body{
+    background-color: #080c10;
+    margin: 0;
+}
+
+.Navs{
+    background-color: #1F2833;
+    padding: 10px;
+    position: relative;
+    border-bottom: 2px solid #66FCF1;
+    margin-bottom: 2px;
+    position: fixed;
+    width: 100%;
+}
+
+.Navs > ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.Types{
+    color: #C5C6C7;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Types:hover{
+    text-decoration: underline cyan;
+}
+
+.vid{
+    height: 70px;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
+.icons:hover{
+    animation: spin 1s ease;
+}
+
+.part{
+    display: grid;
+    grid-template-rows: 600px 600px 600px;
+    grid-template-columns:  auto auto;
+    gap: 10px;
+}
+
+.spare{
+    position: relative;
+}
+
+.sell{
+    color: white;
+    position: absolute;
+    top: 2px;
+    /* top: 200px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sell > .white {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.sell > .second{
+    font-size: 20px;
+   
+}
+
+.sell > button {
+    position: relative;
+    top: 300px;
+    font-size: 20px;
+    background-color: transparent;
+    color:  white;
+    border: none;
+}
+
+.go{
+    color: #66FCF1;
+}
+
+.seen{
+    display: grid;
+}
+
+.pantry{
+    display: grid;
+    grid-template-rows: 600px 600px 600px;
+    grid-template-columns:  auto auto;
+    gap: 10px;
+}
+
+.parts{
+    object-fit: cover;
+    animation: glow 3s ease infinite;
+}
+
+.hide{
+    display: none;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 2px 2px #66FCF1;}
+}
+
+
+@media (max-width: 1200px ) {
+    .seen{
+        display: none;
+    }
+
+    .hide{
+        display: grid;   
+    }
+}
+
+@media (max-width: 800px) {
+    .pantry{
+        display: grid;
+        grid-template-rows: 600px auto;
+        grid-template-columns: auto;
+    }
+
+}

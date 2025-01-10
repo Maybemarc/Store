@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="Navbar" >
+        <div class="Navs">
+            <ul class="Type" >
+                <li class="Types"> <video src="./Assets/Images/Logo/GearShift.mp4" class="vid" muted loop></video> </li>
+                <li class="Types">Store</li>
+                <li class="Types">PC</li>
+                <li class="Types">Desktop</li>
+                <li class="Types">Mouse</li>
+                <li class="Types">Headset</li>
+                <li class="Types">Earpods</li>
+                <li class="Types">Support</li>
+                <li class="Types"> <img class="icons" src="./Assets/Images/Medium/magnifying-glass (1).png" alt="" height="25px"  > </li>
+                <li class="Types"> <img class="icons" src="./Assets/Images/Medium/property-purchasing (1).png" alt="" height="28px"  ></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Laptop">
+        <div class="lap">
+           <img src="./Assets/Images/Large/alienware-Hpaq-kBcYHk-unsplash.jpg" alt="" height="100%" width="100%" >
+    </div>
+
+    </section>
+
+    
+    <section id="Pc">
+        <div class="flap">
+            <img src="./Assets/Images/Large/pexels-rpnickson-7238759.jpg" alt="" height="100%" width="100%" >
+        </div>
+
+    </section>
+
+    <section id="Accs" >
+        <div class="part seen">
+            <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/fabio-magalhaes-nmTm7knUnqs-unsplash.jpg" alt="" width="100%" height="100%" >
+                <div class="sell" >
+                    <h1 class="white" >Desktop Powerhouse</h1>
+                    <h3 class="second" >Unlock Your Productivity with Cutting-Edge Performance.</h3>
+                    <button>Buy One <span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare">
+                <img class="parts" src="./Assets/Images/Large/pexels-cottonbro-3945657.jpg" alt="" width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="black">Console Pro X</h1>
+                    <h2 class="second" >Level Up Your Gaming Experience with Unmatched Performance</h2>
+                    <button>Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/mediamodifier-wV_05P-t15Y-unsplash.jpg" alt="" width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="black"> VR Vision X</h1>
+                    <h2 class="second" >Step into a New Reality with Immersive Virtual Adventures.</h2>
+                    <button>Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/clastr-cloud-gaming-w2ROMf0D9Ks-unsplash (1).jpg" alt="" width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="white" >ProSound Gaming Headset</h1>
+                    <h2 class="second" >Hear Every Detail with Crystal Clear Sound and Deep Bass.</h2>
+                    <button>Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/supratik-deshmukh-iO0I6-mhDEY-unsplash.jpg" alt=""  width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="white" >HyperStrike Gaming Mouse</h1>
+                    <h2 class="second" >Achieve Unbeatable Accuracy with Responsive and Fast Tracking.</h2>
+                    <button>Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="white" >AirPro Wireless Earbuds</h1>
+                    <h2 class="second" >Experience Effortless Sound with Crisp Audio and Deep Bass.</h2>
+                    <button>Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+        
+            
+
+            <div class="pantry hide">
+                <div  ><img class="parts" src="./Assets/Images/Small//fabio-magalhaes-nmTm7knUnqs-unsplash (1).jpg" alt="" width="100%" height="100%" ></div>
+                <div  ><img class="parts" src="./Assets/Images/Small/pexels-cottonbro-3945657 (1).jpg" alt="" width="100%" height="100%" ></div>
+                <div  ><img class="parts" src="./Assets/Images/Small/mediamodifier-wV_05P-t15Y-unsplash (1).jpg" alt="" width="100%" height="100%" ></div>
+                <div  ><img class="parts" src="./Assets/Images/Small/clastr-cloud-gaming-w2ROMf0D9Ks-unsplash.jpg" alt="" width="100%" height="100%" ></div>
+                <div  ><img class="parts" src="./Assets/Images/Small/supratik-deshmukh-iO0I6-mhDEY-unsplash.jpg" alt="" width="100%" height="100%" ></div>
+                <div  ><img class="parts" src="./Assets/Images/Small/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" ></div>
+            </div>
+        </section>
+
+
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () =>{
+        const vid = document.querySelector(".vid")
+
+        function playvideo(){
+            vid.play()
+        }
+    
+        function pauseVideo(){
+            vid.pause()
+            vid.currentTime = 0;
+        }
+
+        vid.addEventListener("mouseenter",playvideo)
+        vid.addEventListener("mouseleave",pauseVideo)
+
+    })
+
+</script>
+</html>
