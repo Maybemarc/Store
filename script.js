@@ -38,3 +38,28 @@ function showSlides(n){
     slides[slideIndex-1].style.display ="block";
 
 }
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.Not_Type');
+    const isVisible = menu.classList.contains('show');
+
+    if (window.innerWidth < 800) {
+        menu.classList.toggle('show', !isVisible);
+    }
+}
+
+document.querySelectorAll('Not_Type .Tags').forEach(link => {
+    link.addEventListener('click', (event) => {
+        const menu = document.querySelector('.Not_Type');
+        menu.classList.remove('show');
+        window.location.href = event.target.href;
+    });
+});
+
+window.addEventListener('resize', () => {
+    const menu = document.querySelector('.Not_Type');
+    if (window.innerWidth > 800) {
+        menu.classList.remove('show');
+    }
+});

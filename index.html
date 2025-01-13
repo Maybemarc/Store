@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+
     <title>Document</title>
 </head>
 
@@ -12,34 +20,37 @@
     <section id="Navbar" >
         <div class="Navs">
             <ul class="Type" >
-                <li class="Types"> <video src="./Assets/Images/Logo/GearShift.mp4" class="vid" muted loop></video> </li>
-                <li class="Types">Store</li>
-                <li class="Types">PC</li>
-                <li class="Types">Desktop</li>
-                <li class="Types">Mouse</li>
-                <li class="Types">Headset</li>
-                <li class="Types">Earpods</li>
-                <li class="Types">Support</li>
-                <li class="Types"> <img class="icons" src="./Assets/Images/Medium/magnifying-glass (1).png" alt="" height="25px"> </li>
-                <li class="Types"> <img class="icons icon" src="./Assets/Images/Medium/property-purchasing (1).png" alt="" height="28px"></li>
+                <li class="Types"><video src="./Assets/Images/Logo/GearShift.mp4" class="vid" muted loop></video> </li>
+                <li class="Types"><a class="Lags" href="#Pc">Store</a></li>
+                <li class="Types"><a class="Lags" href="#Accs">PC</a></li>
+                <li class="Types"><a class="Lags" href="#Accs">Desktop</a></li>
+                <li class="Types"><a class="Lags" href="#Accs"> Mouse</a></li>
+                <li class="Types"><a class="Lags" href="#Accs">Headset</a></li>
+                <li class="Types"><a class="Lags" href="#products">Earpods</a></li>
+                <li class="Types"><a class="Lags" href="#Last">Support</a></li>
+                <li class="Types"><img class="icons" src="./Assets/Images/Medium/magnifying-glass (1).png" alt="" height="25px"> </li>
+                <li class="Types"><img class="icons icon" src="./Assets/Images/Medium/property-purchasing (1).png" alt="" height="28px"></li>
                 <ul class="dis">
                     <li class="dis_Types display"><video src="./Assets/Images/Logo/GearShift.mp4" class="lid" muted loop></video></li>
                     <li class="dis_Types"><img class="icons" src="./Assets/Images/Medium/magnifying-glass (1).png" alt="" height="30px"></li>
                     <li class="dis_Types"><img class="icons icon" src="./Assets/Images/Medium/property-purchasing (1).png" alt="" height="30px"></li>
-                    <li class="dis_Types"> <button class="menu" ><img class="icons" src="./Assets/Images/Medium/menu.png" alt="" height="30px"></button></li>
+                    <li  onclick="toggleMenu()" class="dis_Types"> <button class="menu" ><img class="icons" src="./Assets/Images/Medium/menu.png" alt="" height="30px"></button></li>
                 </ul>
         </ul>
-            <ul class="Not_Type" >
+            <ul class="Not_Type" onclick="toggleMenu()" >
                 <li class="Not_dis"><button class="menu" ><img class="icons" src="./Assets/Images/Medium/menu.png" alt="" height="30px"></button> </li>
-                <li class="Not_dis"><a href="#Accs">Store</a></li>
-                <li class="Not_dis"><a href="#Accs">PC</a></li>
-                <li class="Not_dis"><a href="#Accs">Desktop</a></li>
-                <li class="Not_dis"><a href="#Accs">Mouse</a></li>
-                <li class="Not_dis"><a href="#Accs">Headset</a></li>
-                <li class="Not_dis"><a href="#Accs">Earpods</a></li>
-                <li class="Not_dis"><a href="#Accs">Support</a></li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Store <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">PC <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Desktop <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Mouse <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Headset <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Earpods <span class="Tag">&gt;</span> </a>  </li>
+                <li class="Not_dis"><a class="Tags" href="#Accs">Support <span class="Tag">&gt;</span> </a>  </li>
             </ul>
         </div>
+
+        <button class="top"><a href="#Navbar">&uarr;</a></button>
+
     </section>
 
     <section id="Laptop">
@@ -49,7 +60,6 @@
 
     </section>
 
-    
     <section id="Pc">
         <div class="flap">
             <img src="./Assets/Images/Large/pexels-rpnickson-7238759.jpg" alt="" height="100%" width="100%" >
@@ -92,6 +102,14 @@
                 </div>
             </div>
             <div class="spare" >
+                <img class="parts" src="./Assets/Images/Large/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" >
+                <div class="sell">
+                    <h1 class="black" >AirPro Wireless Earbuds</h1>
+                    <h2 class="second" >Experience Effortless Sound with Crisp Audio and Deep unds.</h2>
+                    <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
+                </div>
+            </div>
+            <div class="spare" >
                 <img class="parts" src="./Assets/Images/Large/supratik-deshmukh-iO0I6-mhDEY-unsplash.jpg" alt=""  width="100%" height="100%" >
                 <div class="sell">
                     <h1 class="white" >HyperStrike Gaming Mouse</h1>
@@ -99,20 +117,12 @@
                     <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
                 </div>
             </div>
-            <div class="spare" >
-                <img class="parts" src="./Assets/Images/Large/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" >
-                <div class="sell">
-                    <h1 class="white" >AirPro Wireless Earbuds</h1>
-                    <h2 class="second" >Experience Effortless Sound with Crisp Audio and Deep unds.</h2>
-                    <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
-                </div>
-            </div>
+          
         
     
 
         </section>
-
-        
+  
         <section id="Hide_Accs" >
             <div class="part pantry hide">
                 <div class="spare" >
@@ -148,6 +158,14 @@
                     </div>
                 </div>
                 <div class="spare" >
+                    <img class="parts" src="./Assets/Images/Small/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" >
+                    <div class="sell">
+                        <h1 class="black" >AirPro Earbuds</h1>
+                        <h2 class="second" >Experience Effortless Sound with Crisp Audio and Deep sounds.</h2>
+                        <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
+                    </div>
+                </div>
+                <div class="spare" >
                     <img class="parts" src="./Assets/Images/Small/supratik-deshmukh-iO0I6-mhDEY-unsplash.jpg" alt=""  width="100%" height="100%" >
                     <div class="sell">
                         <h1 class="white" >HyperStrike Mouse</h1>
@@ -155,14 +173,7 @@
                         <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
                     </div>
                 </div>
-                <div class="spare" >
-                    <img class="parts" src="./Assets/Images/Small/ben-kolde-d6dxQwmxV2Q-unsplash.jpg" alt="" width="100%" height="100%" >
-                    <div class="sell">
-                        <h1 class="white" >AirPro Earbuds</h1>
-                        <h2 class="second" >Experience Effortless Sound with Crisp Audio and Deep sounds.</h2>
-                        <button class="btn_buying" >Buy One<span class="go" >&gt;</span> </button>
-                    </div>
-                </div>
+              
             
 
         </section>
@@ -172,24 +183,32 @@
                 <div class="slides">
                     <img src="./Assets/Images/Large/taitopia-render-UDK2gpPRALA-unsplash.jpg" alt="" height="550px" width="100%">
                     <div class="sliding">
-                        <h1 class="speak">Speaker</h1>
-                        <h2 class="sleak">It is an good speaker</h2>
+                        <h1 class="speak">EchoMax Bluetooth Speaker</h1>
+                        <h2 class="sleak">Compact, powerful, and designed for on-the-go, it delivers immersive audio for every moment—whether indoors or out!</h2>
                         <h3 class="sneak">Explore More <span class="snow">&gt;</span> </h3>
                     </div>      
                 </div>
                 <div class="slides">
-                    <img src="./Assets/Images/Large/supratik-deshmukh-iO0I6-mhDEY-unsplash.jpg" alt="" height="550px" width="100%">
+                    <img src="./Assets/Images/Large/blurrystock-HIbAmybJHVs-unsplash.jpg" alt="" height="550px" width="100%">
                     <div class="sliding">
-                        <h1 class="speak">Speaker</h1>
-                        <h2 class="sleak">It is an good speaker</h2>
+                        <h1 class="speak">ProFlex Wireless Keyboard</h1>
+                        <h2 class="sleak">Experience effortless typing with the ProFlex Wireless Keyboard. </h2>
                         <h3 class="sneak">Explore More <span class="snow">&gt;</span> </h3>
                     </div>
                 </div>
                 <div class="slides">
-                    <img src="./Assets/Images/Large/clastr-cloud-gaming-w2ROMf0D9Ks-unsplash (1).jpg" alt="" height="550px" width="100%">
+                    <img src="./Assets/Images/Large/boliviainteligente-uSooyF1X0s8-unsplash.jpg" alt="" height="550px" width="100%">
                     <div class="sliding">
-                        <h1 class="speak">Speaker</h1>
-                        <h2 class="sleak">It is an good speaker</h2>
+                        <h1 class="speak">PowerPro Processors</h1>
+                        <h2 class="sleak">Boost your system’s performance with the PowerPro Processor. Designed for speed and reliability, it ensures smooth multitasking and enhanced efficiency for all your computing needs.</h2>
+                        <h3 class="sneak">Explore More <span class="snow">&gt;</span> </h3>
+                    </div>
+                </div>
+                <div class="slides">
+                    <img src="./Assets/Images/Large/pexels-verma-harshil-4218546.jpg" alt="" height="550px" width="100%">
+                    <div class="sliding">
+                        <h1 class="speak">SmartConnect Routers</h1>
+                        <h2 class="sleak">Enjoy fast, reliable internet with the SmartConnect Router. Designed for smooth streaming, gaming, and browsing, it provides stable connectivity for all your devices, anytime, anywhere.</h2>
                         <h3 class="sneak">Explore More <span class="snow">&gt;</span> </h3>
                     </div>
                 </div>
@@ -200,6 +219,54 @@
             </div>
         
         
+        </section>
+
+        <section id="Last">
+            <div class="foot">
+                <div class="feet">
+                        <ul class="finder">
+                            <li><h1 class="feeter">Shop</h1></li>
+                            <li class="finding"><a class="fast" href="#Navbar"> Store</a></li>
+                            <li class="finding"><a class="fast" href="#Navbar" >PC</a></li>
+                            <li class="finding"><a class="fast" href="#Navbar" >Desktop</a></li>
+                            <li class="finding"><a class="fast" href="#Navbar" >Mouse</a></li>
+                            <li class="finding"><a class="fast" href="#Navbar" >Headset</a></li>
+                            <li class="finding"><a class="fast" href="#Navbar" >Earpods</a></li>
+                        </ul>
+                </div>
+                <div class="feet">
+                        <ul class="finder">
+                            <li><h1 class="feeter">Gift</h1></li>
+                            <li class="finding"><a class="fast" href="#Navs" >E-Gift Cards</a></li>
+                            <li class="finding"><a class="fast" href="#Navs" >Subscription</a></li>
+                            <li class="finding"><a class="fast" href="#Navs" >Premium</a></li>
+                            <li class="finding"><a class="fast" href="#Navs" >Explore</a></li>
+                        </ul>
+                </div>
+                <div class="feet">
+                        <ul class="finder">
+                            <li><h1 class="feeter">Support</h1></li>
+                            <li class="finding"><a class="fast" href="#Last" >Get Help</a></li>
+                            <li class="finding"><a class="fast" href="#Last" >Waranty</a></li>
+                            <li class="finding"><a class="fast" href="#Last" >Guarantee</a></li>
+                            <li class="finding"><a class="fast" href="#Last" >Registration</a></li>
+                            <li class="finding"><a class="fast" href="#Last" >Contact</a></li>
+                            <li class="finding"><a class="fast" href="#Last" >About us</a></li>
+                        </ul>
+                </div>
+                <div class="feet">
+                    <ul class="finder">
+                            <li><h1 class="feeter">Follow</h1></li>
+                            <li class="finding"><a class="fast" href="#Last"><img class="social" src="./Assets/Images/Medium/Footer/facebook_5968764.png" alt="" height="22px" ></a></li>
+                            <li class="finding"><a class="fast" href="#Last"><img class="social" src="./Assets/Images/Medium/Footer/instagram_408758.png" alt="" height="22px" ></a></li>
+                            <li class="finding"><a class="fast" href="#Last"><img class="social" src="./Assets/Images/Medium/Footer/youtube_3767228.png" alt="" height="22px" ></a></li>
+                            <li class="finding"><a class="fast" href="#Last"><img class="social" src="./Assets/Images/Medium/Footer/discord_5968756.png" alt="" height="22px" ></a></li>
+                            <li class="finding"><a class="fast" href="#Last"><img class="social" src="./Assets/Images/Medium/Footer/twitch_2504946.png" alt="" height="22px" ></a></li>
+                        </ul>
+                </div>
+
+            </div>
+
         </section>
 
 </body>
