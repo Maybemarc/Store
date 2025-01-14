@@ -30,7 +30,7 @@ body{
     background-color: #1F2833;
     padding: 10px;
     position: relative;
-    border-bottom: 2px solid #66FCF1;
+    border-bottom: 2px solid wheat;
     margin-bottom: 2px;
     position: fixed;
     width: 100%;
@@ -110,7 +110,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    box-shadow: -10px 0 10px #66FCF1;
+    box-shadow: -10px 0 10px wheat;
     gap: 40px;
     font-size: 30px;
     opacity: 0;
@@ -131,7 +131,7 @@ body{
 }
 
 .Tags{
-    color: #66FCF1;
+    color: wheat;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -144,7 +144,7 @@ body{
     padding: 0;
     margin: 0;
     background: transparent;
-    border-bottom: 2px solid #66FCF1;
+    border-bottom: 2px solid wheat;
     transition: all 0.3s;
 }
 
@@ -167,6 +167,34 @@ body{
 .icon:hover{
     animation: scaling 2s ease;
 }
+
+/* Laptop and pc */
+
+.lap,.flap{
+    position: relative;
+}
+
+.lapping,.flapping{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+
+.lapping > h1,.flapping > h1{
+    font-size: 50px;
+    color: wheat;
+}
+
+.lapping > h4,.flapping > h4{
+    font-size: 30px;
+    color: white;
+}
+
+.lap_hide,.flap_hide{
+    display: none;
+}
+
+/*  Accs */
 
 .part{
     display: grid;
@@ -204,10 +232,6 @@ body{
     margin-bottom: 0;
 }
 
-.black{
-    color: black;
-    margin-bottom: 0;
-}
 
 .sell > .second{
     color: white;
@@ -216,6 +240,11 @@ body{
     font-family: "Jersey 15", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.sell > .black{
+    color: black;
+    margin-bottom: 0;
 }
 
 .sell > .btn_buying {
@@ -395,18 +424,10 @@ body{
     }
 }
 
-@media (min-width: 801px) {
-    .Not_Type {
-        visibility: hidden;
-        opacity: 0;
-    }
-    .Not_Type.show {
-        visibility: hidden;
-        opacity: 0;
-        }
-    }
 
 @media (max-width: 800px) {
+
+    /*  Navs */
     .Types{
         display: none;
     }
@@ -414,6 +435,23 @@ body{
     .dis{
         display: flex;
     }
+
+    /* Laptop adn Pc */
+    .lap_seen,.flap_seen{
+        display: none;
+    }
+    
+    .lap_hide,.flap_hide{
+        display: grid;
+        grid-template-rows: 600px;
+        grid-template-columns: auto;
+    }
+
+    .lap_hide > img,.flap_hide > img{
+        object-fit: cover;
+    }
+
+    /* Accs  */
 
     .hide{
         display: none;
@@ -424,12 +462,50 @@ body{
         grid-template-columns: auto;
     }
 
+}
+
+@media(max-width:420px){
+
+    /* Navs */
+    .icons{
+        height: 15px ;
+    }
+
+
+    /* Laptop and pc */
+    .lapping > h1,.flapping > h1 {
+        font-size: 8vw;
+    }
+
+    .lapping > h4 ,.flapping > h4{
+        font-size: 6vw;
+    }
+
+    /* Accs */
+    .sell > .white,.black{
+        font-size: 10vw;
+    }
+
+    .sell > .second{
+        font-size: 8vw;
+    }
+
+    .sell > .buy,.sell >.btn_buying{
+        font-size: 8vw;
+    }
+
     .speak{
-        font-size: 40px;
+        font-size: 10vw;
     }
+
     .sleak{
-        font-size: 30px;
+        font-size: 8vw;
     }
+
+    .sneak{
+        font-size: 6vw;
+    }
+
 
 }
   
@@ -445,9 +521,9 @@ body{
 }
 
 @keyframes glow{
-    50%{box-shadow: 0px 0px 2px 2px #66FCF1;}
+    50%{box-shadow: 0px 0px 2px 2px wheat;}
 }
 
 @keyframes flow{
-    50%{box-shadow: 0px 0px 2px 5px #66FCF1;}
+    50%{box-shadow: 0px 0px 2px 5px white;}
 }
