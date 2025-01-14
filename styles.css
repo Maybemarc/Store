@@ -393,6 +393,7 @@ body{
     .hide{
         display: grid;
     }
+}
 
 @media (min-width: 801px) {
     .Not_Type {
@@ -423,9 +424,16 @@ body{
         grid-template-columns: auto;
     }
 
+    .speak{
+        font-size: 40px;
+    }
+    .sleak{
+        font-size: 30px;
+    }
+
 }
   
-}
+
 
 @keyframes scaling{
     50%{transform: scale(1.5,1.5);}
